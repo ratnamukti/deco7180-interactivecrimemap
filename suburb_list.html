@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Crime Map</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+</head>
+<body>
+    <div>
+        <h1>Crime Map</h1>
+        <h3>LeafletJS Map will be used in next version</h3>
+        <!-- <ol>
+            <li><button class="suburbButton" value="st lucia">St.Lucia</button></li>
+            <li><button class="suburbButton" value="toowong">Toowong</button></li>
+            <li><button class="suburbButton" value="taringa">Taringa</button></li>
+            <li><button class="suburbButton" value="indooroopilly">Indooroopilly</button></li>
+            <li><button class="suburbButton" value="Brisbane City">Brisbane City</button></li>
+        </ol> -->
+
+        <!--Leaflet JS-->
+        <div id="map"></div>
+    </div>
+
+    <!--Reference: GeeksForGeeks How to create popup box using HTML and CSS on https://www.geeksforgeeks.org/how-to-create-popup-box-using-html-and-css/-->
+    <div id="popup-banner" class="popup">
+        <div class="popup-content">
+            <h1 id="popup-title" style="color:green;">
+                  Suburb Name
+            </h1>
+            <h4>Top 3 Crimes</h4>
+            <div id="top-offences-container"></div>
+            
+            <button id="closePopup">
+                  Close
+            </button>
+        </div>
+    </div>
+    <script src="suburblistscript.js"></script>
+    
+
+</body>
+</html>
