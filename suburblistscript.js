@@ -122,7 +122,9 @@ choosenSuburbs = ["st lucia", "Toowong", "Indooroopilly",
     //--Reference: Interactive Choropleth Map on https://leafletjs.com/examples/choropleth/
     function highlightFeature(e) {
         var layer = e.target;
-    
+        
+        // style map border color into dark pink and 
+        // highlight to yellow when hovered
         layer.setStyle({
             fillColor: '#FDFF7A',
             weight: 5,
@@ -176,7 +178,7 @@ choosenSuburbs = ["st lucia", "Toowong", "Indooroopilly",
 				statesData.features.push(data[0].features[0])
 
 				if (statesData.features.length == choosenSuburbs.length) {
-                    // style map border color
+                    // style map area color into pink
                     function style(feature) {
                         return {
                             fillColor: '#EB4181',
